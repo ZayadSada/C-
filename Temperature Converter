@@ -1,0 +1,39 @@
+/* This program converts a Celsius temperature to Fahrenheit.
+
+ Written by zayad sada  -- Project #1 -- june. 23, 2024
+
+ Input: the Celsius temperature
+
+ Output: the corresponding Fahrenheit temperature
+
+------------------------------------------------------------------*/
+
+#include <iostream> // cin, cout, <<, >>
+
+using namespace std;
+
+int main()
+
+{
+
+ // 1. Output a prompt for the Celsius temperature to cout.
+
+ cout << "Enter the Celsius temperature: ";
+
+ // 2. Input a real value from cin and store it in celsius.
+
+ double celsius;
+
+ cin >> celsius;
+
+ // 3. Compute fahrenheit = 1.8 * celsius + 32.
+
+ double fahrenheit = 1.8 * celsius + 32;
+
+ // 4. Output fahrenheit to cout.
+
+ cout << celsius << " degrees Celsius is equivalent to "
+
+ << fahrenheit << " degrees Fahrenheit.\n";
+
+}
