@@ -49,6 +49,7 @@ int main()
 
  << " with half-life " << halfLife << " days\n"
 
+
  << initialAmount << " mg" << " will be reduced to "
 
  << amountRemaining << " mg after " << time << " days\n";
