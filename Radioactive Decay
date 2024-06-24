@@ -1,0 +1,56 @@
+
+/* This program computes the amount of a radioactive substance 
+
+remaining after an initial amount decays for some time period.
+
+ Written by zayad sada  -- Project  -- jun. 24, 2024
+
+ Input: element's name, its half-life, the initial amount, 
+
+and a time period
+
+ Output: the input items and the amount of the substance 
+
+remaining at the end of the time period
+
+ --------------------------------------------------------------------*/
+
+#include <iostream> // cin, cout, <<, >>
+
+#include <string> // string
+
+#include <cmath> // pow()
+
+using namespace std;
+int main()
+
+{
+ cout << "Enter the name of your radioactive substance: ";
+
+ string element;
+
+ cin >> element;
+
+ cout << "and its half-life (days): ";
+
+ double halfLife;
+
+ cin >> halfLife;
+
+ cout << "Enter the initial amount (mg) and a time period (days): ";
+
+ double initialAmount, time;
+
+ cin >> initialAmount >> time;
+
+ double amountRemaining = initialAmount * pow(0.5, time / halfLife);
+
+ cout << "\nFor " << element
+
+ << " with half-life " << halfLife << " days\n"
+
+ << initialAmount << " mg" << " will be reduced to "
+
+ << amountRemaining << " mg after " << time << " days\n";
+
+}
