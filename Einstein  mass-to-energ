@@ -1,0 +1,41 @@
+/* This program computes energy from a given mass using Einstein's 
+
+mass-to-energy conversion equation.
+
+Input: the mass (in kilograms) being converted to energy
+
+Output: the amount of energy (in kilojoules) corresponding to mass
+
+---------------------------------------------------------------------------*/
+
+#include <iostream> // cin, cout, <<, >>
+
+#include <cmath> // pow()
+
+using namespace std;
+
+int main()
+
+{
+
+ const double SPEED_OF_LIGHT = 2.997925e8; // meters/sec
+
+ double mass;
+
+ cout << "To find the amount of energy obtained from a given mass,\n"
+
+"enter a mass (in kilograms): ";
+
+ cin >> mass; // get mass
+
+ // compute energy
+
+ double energy = mass * pow(SPEED_OF_LIGHT, 2);
+
+ // display energy
+
+ cout << mass << " kilograms of matter will release\n"
+
+ << energy << " kilojoules of energy.\n";
+
+}
